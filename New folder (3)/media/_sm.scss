@@ -1,0 +1,75 @@
+@media (max-width: 767px) {
+  body.home {
+    header {
+      flex-direction: column;
+      div.logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 20%;
+        }
+      }
+      nav.navbar {
+        ul {
+          flex-direction: column;
+          text-align: center;
+          li {
+            margin: 2% 0;
+          }
+        }
+      }
+    }
+    main {
+      div.img {
+        img {
+          width: 90%;
+        }
+      }
+      div.content {
+        h1 {
+          font-size: 1.5rem;
+          width: 70%;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+    section.menu {
+      h2.title {
+        font-size: 1.5rem;
+      }
+      div.sports {
+        div.card {
+          div.image {
+            padding: 2%;
+            box-sizing: border-box;
+            img {
+              width: 60%;
+            }
+            img.img-choogan {
+              width: 60%;
+            }
+          }
+          div.content {
+            button.btn {
+                width: 60%;
+                a{
+                    font-size: 1rem;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .popular-sports__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .champions__grid {
+    grid-template-columns: 1fr;
+  }
+}

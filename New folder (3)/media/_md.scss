@@ -1,0 +1,26 @@
+
+@media (max-width: 1023px) {
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+
+        &__content {
+            padding-right: 0;
+            padding-top: 20px;
+        }
+    }
+
+    .popular-sports__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .champions__grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        .champion-large, .champion-small {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

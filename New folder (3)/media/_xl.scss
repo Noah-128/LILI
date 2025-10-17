@@ -1,0 +1,14 @@
+
+@media (min-width: 1440px) {
+    .main-section {
+        padding: 60px 0;
+    }
+
+    .popular-sports__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .champions__grid {
+        gap: 30px;
+    }
+}

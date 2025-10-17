@@ -1,0 +1,291 @@
+@font-face {
+  font-family: iranYekan;
+  src: url(./assets/font/iranYekan/IRANYekanWeb-Medium.eot);
+  src: url(./assets/font/iranYekan/IRANYekanWeb-Medium.ttf);
+  src: url(./assets/font/iranYekan/IRANYekanWeb-Medium.woff2);
+  src: url(./assets/font/iranYekan/iranyekanwebmedium.2d4f96e5.2d4f96e5.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body.home {
+  font-family: "iranYekan";
+  background-color: #f5f5f5;
+  color: rgb(101, 107, 118);
+  direction: rtl;
+
+  // start-header
+  header {
+    width: 85%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 3%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+
+    div.logo {
+      width: 40%;
+      img {
+        width: 22%;
+      }
+    }
+    nav.navbar {
+      width: 50%;
+      ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        li {
+          a {
+            color: rgb(101, 107, 118);
+            text-decoration: none;
+            font-size: 110%;
+          }
+        }
+      }
+    }
+  }
+  // end-header
+
+  // start-main
+  main {
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div.img {
+      width: 50%;
+      img {
+        width: 80%;
+        border-radius: 10px;
+      }
+    }
+
+    div.content {
+      width: 50%;
+      padding-right: 4%;
+      box-sizing: border-box;
+      h1 {
+        margin-bottom: 5%;
+        font-size: 2.4em;
+        text-align: justify;
+      }
+
+      p {
+        max-width: 85%;
+        text-align: justify;
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  section#menu {
+    width: 85%;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    h2.title {
+      margin-right: 5%;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: right;
+      font-weight: 600;
+    }
+    div.sports {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      div.card {
+        background-color: #6667742f;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        padding: 1%;
+        box-sizing: border-box;
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        div.image {
+          padding: 5%;
+          height: 260px;
+          padding-bottom: 0;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 2% 0;
+          img {
+            border-radius: 15px;
+            width: 100%;
+            object-fit: cover;
+          }
+          img.img-choogan {
+            border-radius: 15px;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+        div.content {
+          margin-top: 2%;
+          padding: 1.5rem;
+          padding-top: 0;
+          box-sizing: border-box;
+          h5.title {
+            font-size: 1.2rem !important;
+            text-align: center;
+          }
+          button.btn {
+            display: block;
+            margin: 0 auto;
+            margin-top: 5%;
+            border: none;
+            background: #f5f5f5;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            font-family: "iranYekan";
+            width: 80%;
+            cursor: pointer;
+            &:hover {
+              background: rgba(134, 143, 142, 0.3);
+              a {
+                color: #f5f5f5;
+              }
+            }
+            a {
+              text-decoration: none;
+              color: rgba(73, 72, 72, 0.659);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.text {
+    padding: 40px 0;
+    opacity: 0.8;
+    p {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+
+  // .footer {
+  //   background: linear-gradient(to right, $primary-dark, $primary-green);
+  //   padding: 1.5rem 0;
+  //   border-top-left-radius: 12px;
+  //   border-top-right-radius: 12px;
+  //   border-top: 1px solid $border-color;
+  
+  //   &__container {
+  //     width: $container-width;
+  //     max-width: 1200px;
+  //     margin: 0 auto;
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     gap: 2rem;
+  //   }
+  
+  //   &__logo-placeholder {
+  //     width: 100px;
+  //     height: 50px;
+  //     background-color: $border-color;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     color: $text-color;
+  //     font-size: 1.2rem;
+  //     border-radius: 8px;
+  //   }
+  
+  //   &__creator {
+  //     p {
+  //       color: $text-color;
+  //       font-size: 1rem;
+  //     }
+  //   }
+  
+  //   &__contact {
+  //     h3 {
+  //       color: $text-color;
+  //       font-size: 1.2rem;
+  //       margin-bottom: 0.5rem;
+  //     }
+  
+  //     p {
+  //       color: $text-color;
+  //       font-size: 1rem;
+  //       display: flex;
+  //       align-items: center;
+  //       gap: 0.5rem;
+  //     }
+  
+  //     &-icon {
+  //       font-size: 1.2rem;
+  //     }
+  
+  //     &-link {
+  //       color: $text-color;
+  //       text-decoration: none;
+  //       transition: color 0.3s ease-in-out;
+  
+  //       &:hover {
+  //         color: lighten($primary-green, 20%);
+  //       }
+  //     }
+  //   }
+  // }
+
+  // .footer {
+  //   background: $footer-bg;
+  //   color: rgb(101, 107, 118);
+  //   text-align: center;
+  //   padding: 20px;
+
+  //   &__name {
+  //     font-size: 1.2em;
+  //   }
+
+  //   &__links {
+  //     a {
+  //       color: rgb(101, 107, 118);
+  //       text-decoration: none;
+  //       margin: 0 10px;
+  //     }
+  //   }
+  // }
+}
+$blue: #234C6A;
+$light: #f5f5f5;
+$text: #2C3E50;
+$shadow: 0 4px 8px rgba(0, 105, 148, 0.1);
+$strong-shadow: 0 8px 24px rgba(0, 105, 148, 0.25);
+
+
+// import sports file
+@import "./handball";
+@import "./skate";
+@import "./golf";
+@import "./choogan";
+@import "./valiball";
+@import "./basketball";
+
+// Import responsive files
+@import "media/xl";
+@import "media/lg";
+@import "media/md";
+@import "media/sm";
+@import "media/xs";
